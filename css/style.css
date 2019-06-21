@@ -24,7 +24,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 50px;
-	margin-bottom: 53px;
+	margin-bottom: 53px;	
 }
 
 .logo {
@@ -35,6 +35,9 @@ body {
 }
 
 .nav {
+	margin: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	font-size: 20px;
 	font-weight: 500;
@@ -68,6 +71,74 @@ a {
 
 .search:hover {
 	background-image: url(../img/icon_search_1.png);
+}
+
+.btn-menu {
+    border: none;
+    display: none;
+}
+
+.btn-menu:focus {
+    outline: none;
+}
+
+.btn-menu svg {
+    width: 35px;
+    height: 35px;
+    fill: #192b59;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+    top: 30px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    padding: 30px 15px 40px 15px;
+    box-shadow: 0 5px 6px #f4f4f4;
+    border-radius: 10px;
+}
+
+.btn-close {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    font-size: 35px;
+    font-weight: 200;
+    color: #6e7ea9;
+    right: 21px;
+    top: 15px;
+    opacity: 0.2;
+    transition: 0.3s;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+.btn-close:focus {
+    outline: none;
+}
+
+.nav-modal {
+	font-size: 20px;
+	font-weight: 500;
+	list-style-type: none;
+	margin: 0;
+}
+
+.nav-modal>li {
+    margin-bottom: 18px;
+}
+
+.nav-modal:last-child {
+    margin-top: 35px;
 }
 
 .page-header {
@@ -212,7 +283,7 @@ h1 {
 .services-item {
 	width: 33.3%;
 	padding: 15px;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .services-item-inner {
@@ -809,6 +880,7 @@ h1 {
 	text-align: center;
 	width: 1022px;
 	margin: 0 auto;
+
 }
 
 .your-name input, .email input {
@@ -816,7 +888,7 @@ h1 {
 	letter-spacing: 1px;
 	border: 1px solid #fff;
 	border-radius: 10px;
-	padding: 25px 220px 25px 24px;
+	padding: 25px 238px 25px 24px;
 	color: #fff;   
 }
 
@@ -854,7 +926,9 @@ h1 {
 
 .send {
 	padding-top: 37px;
-	padding-left: 1060px;
+	display: flex;
+    justify-content: flex-end;
+    width: 84%;
 }
 
 .btn-send button:hover {
@@ -874,3 +948,214 @@ h1 {
 	padding-bottom: 20px;
 }
 
+
+/*MEDIA*/
+
+@media (max-width: 1200px) {
+    .box-works {
+        justify-content: center;
+   }
+
+   .works-item {
+   	    width: 45%;
+   	    height: 500px;
+   }
+}
+
+@media (max-width: 1070px) {
+	.box-team {
+		display: flex;
+		flex-flow: row wrap;
+		padding: 0 30px;
+	}
+
+	.team-item {
+		margin: 60px;
+		padding: 10px 60px 40px;
+	}
+
+	.title-text {
+		padding-bottom: 30px;
+	}
+
+	.services-item {
+		width: 50%;
+	}
+
+	.services-text {
+		margin: 0 auto;
+	}
+
+	.works-item {
+		width: 80%;
+        height: 800px;
+	}
+}
+
+@media(max-width:1000px) {
+	.works-item {
+		width: 50%;
+		height: 500px;
+    }
+}
+
+
+@media (max-width: 862px) {
+	.nav {
+     	display: none;
+    }
+
+    .btn-menu {
+        display: block;
+        border: none;
+        background-color: transparent;
+    }
+
+    .box-services-item {
+    	flex-wrap: wrap;
+		
+	}
+    
+    .services-item {
+		width: 45%;
+		padding-left: 50px;
+	}
+
+	.works-item {
+		width: 50%;
+		height: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .box-about {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.box-team {
+		flex-direction: column; 
+	}
+    
+    .team-item {
+    	margin: 10px;
+        padding-bottom: 30px;
+        flex:100%;
+    }
+
+	.box-web {
+		text-align: center;
+		margin: 0 auto;
+    }
+
+    .btn-primary, .btn-secondary {
+        font-size: 11px;
+        padding: 20px 50px;
+    }
+     
+    .btn-gr {
+        flex-direction: column;
+        text-align: center;
+        max-width: 200px;
+        margin: 0 auto; 
+    }
+       
+    .btn-gr a {
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .services-item {
+    	width: 95%;
+    }
+
+    .services-text {
+    	margin: 0 auto;
+    }
+
+    .box-works {
+    	flex-direction: column;
+    	width: 55%;
+
+    }
+
+    .box-icon {
+    	flex-wrap: wrap;
+    	width: 300px;
+    }
+
+    .item-icon {
+    	padding-top: 40px;
+    }
+
+    .box-form-item {
+    	flex-wrap: wrap;
+    	width: 450px;
+    }
+
+    .email {
+        padding-left: 0;
+        padding-top: 20px;
+	}
+
+	.massage textarea {
+		width: 400px;
+	}
+
+    .box-price {
+        flex-wrap: wrap;
+        width: 60%;
+        text-align: center;
+    }
+
+    .box-our-team {
+    	flex-direction: column;
+    	text-align: center;
+    }
+
+    .box-seo {
+    	flex-direction: column;
+    	align-items: center;
+    }
+
+    .text-dolore {
+    	width: 500px;
+    }
+
+     h1 {
+      	text-align: center;
+      	font-size: 40px;
+    }
+
+    .btn-group {
+    	text-align: center;
+    }
+
+    .box-our-team {
+    	justify-content: center;
+    }
+
+    .works-item {
+	   width: 130%;
+       height: 400px;          
+    }
+
+}
+
+@media (max-width: 568px) {
+	.title-text {
+		text-align: center;
+		width: 450px;
+	}
+    
+    .your-name input, .email input {
+    	padding-right: 180px;
+
+    }
+
+    .works-item {
+		width: 130%;
+		height: 350px;
+		margin-left: 0;
+    }
+}
