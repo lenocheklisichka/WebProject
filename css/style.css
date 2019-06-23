@@ -960,6 +960,11 @@ h1 {
    	    width: 45%;
    	    height: 500px;
    }
+
+   .box-seo {
+   	    flex-direction: column;
+   	    width: 550px;
+   }
 }
 
 @media (max-width: 1070px) {
@@ -999,6 +1004,13 @@ h1 {
     }
 }
 
+@media (max-width: 902px) {
+	.box-team {
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+	}
+}
 
 @media (max-width: 862px) {
 	.nav {
@@ -1017,7 +1029,6 @@ h1 {
 	}
     
     .services-item {
-		width: 45%;
 		padding-left: 50px;
 	}
 
@@ -1032,15 +1043,11 @@ h1 {
 		text-align: center;
 		margin: 0 auto;
 	}
-
-	.box-team {
-		flex-direction: column; 
-	}
     
     .team-item {
     	margin: 10px;
         padding-bottom: 30px;
-        flex:100%;
+        
     }
 
 	.box-web {
@@ -1076,7 +1083,6 @@ h1 {
     .box-works {
     	flex-direction: column;
     	width: 55%;
-
     }
 
     .box-icon {
@@ -1110,7 +1116,8 @@ h1 {
 
     .box-our-team {
     	flex-direction: column;
-    	text-align: center;
+        margin: 0 auto;
+        padding-right: 175px;
     }
 
     .box-seo {
@@ -1131,15 +1138,11 @@ h1 {
     	text-align: center;
     }
 
-    .box-our-team {
-    	justify-content: center;
-    }
-
     .works-item {
 	   width: 130%;
-       height: 400px;          
+       height: 400px; 
+       background-position: center;         
     }
-
 }
 
 @media (max-width: 568px) {
