@@ -976,7 +976,7 @@ h1 {
    }
 
    .box-our-team {
-        flex-direction: column;
+        flex-flow: row wrap;
         margin-top: 20px;
    }
 
