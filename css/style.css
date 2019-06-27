@@ -878,13 +878,13 @@ h1 {
 .box-form-item {
 	display: flex;
 	text-align: center;
-	width: 1022px;
+	width: 68%;
 	margin: 0 auto;
 
 }
 
 .your-name input, .email input {
-	font-size: 20px;
+	font-size: 19px;
 	letter-spacing: 1px;
 	border: 1px solid #fff;
 	border-radius: 10px;
@@ -907,7 +907,7 @@ h1 {
     padding-left: 24px;
 	border-radius: 10px;
 	min-height: 300px;
-    width: 1000px;
+    width: 66%;
     resize: none;
 }
 
@@ -917,7 +917,7 @@ h1 {
 }
 
 .btn-send button {
-	font-size: 18px;
+	font-size: 16px;
 	padding: 25px 80px 26px 80px;
 	border-radius: 10px;
 	background-color: #fff;
@@ -951,6 +951,20 @@ h1 {
 
 /*MEDIA*/
 
+@media (max-width: 1250px) {
+
+    .box-form-item {
+       flex-direction: column;
+}
+	.email {
+       padding-left: 0;
+       padding-top: 20px
+}
+
+    .your-name input, .email input {
+	   width: 69%;
+}
+
 @media (max-width: 1200px) {
     .box-works {
         justify-content: center;
@@ -959,6 +973,11 @@ h1 {
    .works-item {
    	    width: 45%;
    	    height: 500px;
+   }
+
+   .box-our-team {
+        flex-direction: column;
+        margin-top: 20px;
    }
 
    .box-seo {
@@ -1025,7 +1044,6 @@ h1 {
 
     .box-services-item {
     	flex-wrap: wrap;
-		
 	}
     
     .services-item {
@@ -1035,6 +1053,10 @@ h1 {
 	.works-item {
 		width: 50%;
 		height: 500px;
+    }
+
+    .box-message {
+    	width: 112%;
     }
 }
 
@@ -1047,7 +1069,6 @@ h1 {
     .team-item {
     	margin: 10px;
         padding-bottom: 30px;
-        
     }
 
 	.box-web {
@@ -1091,7 +1112,7 @@ h1 {
     }
 
     .item-icon {
-    	padding-top: 40px;
+    	padding-top: 50px;
     }
 
     .box-form-item {
@@ -1104,8 +1125,18 @@ h1 {
         padding-top: 20px;
 	}
 
+	.your-name input, .email input{
+		width: 40%
+	}
+
+	.box-message {
+        width: 112%;
+        text-align: start;
+        padding-left: 150px;
+     }
+
 	.massage textarea {
-		width: 400px;
+		width: 49%;
 	}
 
     .box-price {
@@ -1153,7 +1184,6 @@ h1 {
     
     .your-name input, .email input {
     	padding-right: 180px;
-
     }
 
     .works-item {
@@ -1161,4 +1191,11 @@ h1 {
 		height: 350px;
 		margin-left: 0;
     }
+
+    .box-message {
+    	width: 133%;
+        padding-left: 82px;	
+    }
+
+
 }
