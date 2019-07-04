@@ -32,6 +32,7 @@ body {
 	font-weight: 600;
 	color: #000;
 	letter-spacing: -1.5px;
+	padding-left: 30px;
 }
 
 .nav {
@@ -232,31 +233,35 @@ h1 {
 	padding-top: 120px;
 	padding-bottom: 140px;
 	text-align: center;
-	width: 1050px;
+	width: 100%;
+	max-width: 1067px;
 	margin: 0 auto;
 }
 
 .team-item {
-	width: 240px;
-    padding-right: 160px;
+	width: 100%; 
 }
 
 .icon {
-    text-align: center;
+   padding-left: 30px;
 }
 
 .team {
 	font-size: 20px;
 	font-weight: 600;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 20px;
+	padding-left: 35px;
 }
 
 .text-team {
-	width: 250px;
+	width: 230px;
+	text-align: center;
 	padding-top: 20px;
+	padding-left: 50px;
 	line-height: 18px;
 	letter-spacing: 0.3px;
+	margin: 0 auto;
 }
 
 .page-services {
@@ -269,12 +274,10 @@ h1 {
 }
 
 .box-services-item {
-   /* display: grid;
-	grid-gap: 25px;
-	grid-template-columns: 1fr 1fr 1fr;*/
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 1180px;
+	width: 100%;
+	max-width: 1169px;
 	margin: 0 auto;
 	padding-top: 100px;
 	padding-bottom: 126px;
@@ -307,20 +310,25 @@ h1 {
     background-position: center;
 }
 
+.item {
+	font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
+}
+
 .services-text {
 	font-size: 15px;
-	line-height: 18px;
-	width: 245px;
+	line-height: 24px;
 	text-align: center;
-	padding-top: 25px;
-	padding-bottom: 45px;
+	padding-bottom: 36px;
 }
 
 .button {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 600;
 	border: 2px solid #212121;
-	padding: 15px 17px;
+	padding: 12px 16px;
 	color: #212121;
 }
 
@@ -352,7 +360,7 @@ h1 {
 	font-weight: 600;
 	color: #212121;
 	border: 2px solid #00897b;
-	padding: 16px 25px;
+	padding: 15px 28px;
 }
 
 .btn-all:hover, .btn-web:hover, .btn-design:hover, .btn-mockups:hover {
@@ -372,42 +380,14 @@ h1 {
 .box-works{
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 1180px;
-	margin: 0 auto;
-	padding-top: 124px;
-}
-
-.hand_watch {
-	background-image: url(../img/hand_watch.png);
-}
-
-.day_pass {
-	background-image: url(../img/day_pass.png);
-}
-
-.frank {
-	background-image: url(../img/frank.png);
-}
-
-.bg {
-	background-image: url(../img/bg.png);
-}
-
-.bottle {
-	background-image: url(../img/bottle.png);
-}
-
-.backpack {
-	background-image: url(../img/backpack.png);
+	width: 100%;
+	justify-content: center;
+	padding-top: 115px;
 }
 
 .works-item {
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 370px;
-	height: 370px;
-	margin-left: 20px;
-	margin-bottom: 20px;
+	margin-left: 14px;
+	margin-bottom: 14px;
 }
 
 .btn {
@@ -441,7 +421,8 @@ h1 {
 
 .box-price {
 	display: flex;
-	max-width: 1180px;
+	width: 100%;
+	max-width: 1068px;
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 130px;
@@ -450,7 +431,7 @@ h1 {
 .box-price-item {
 	background-image: url(../img/bg_price.png);
 	background-repeat: no-repeat;
-	width: 370px;
+	width: 30%;
 	height: 600px;
 	background-color: #fff;
 	padding: 47px 0;
@@ -545,38 +526,26 @@ h1 {
 
 .box-our-team {
 	display: flex;
-	max-width: 1180px;
+	width: 100%;
+	max-width: 1170px;
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 130px
 }
 
 .our-team{
-	width: 33%;
-	padding: 28px;
+	width: 33.3%;
+	padding: 12px;
 	box-sizing: border-box;
 	margin: 0 auto;
 }
 
-.manager {
-	background-image: url(../img/manager.png);
-	background-repeat: no-repeat;
-	width: 370px;
-	height: 318px;
+.men-img {
+	width: 100%;
 }
 
-.director {
-	background-image: url(../img/director.png);
-	background-repeat: no-repeat;
-	width: 370px;
-	height: 318px;
-}
-
-.admin {
-	background-image: url(../img/admin.png);
-	background-repeat: no-repeat;
-	width: 370px;
-	height: 318px;
+.men-img img {
+	border-radius: 10px;
 }
 
 .name {
@@ -687,7 +656,6 @@ h1 {
 .box-blog {
 	text-align: center;
 	padding-top: 120px;
-
 }
 
 .page-blog {
@@ -699,6 +667,10 @@ h1 {
 	display: flex;
 	max-width: 1170px;
 	margin: 0 auto;
+}
+
+.seo-quis {
+	width: 60%;
 }
 
 .box-seo-item-1 {
@@ -716,27 +688,6 @@ h1 {
 
 .box-seo-item-2 {
 	flex-direction: row-reverse;
-}
-
-.seo {
-	background-image: url(../img/seo.png);
-	background-repeat: no-repeat;
-	width: 570px;
-	height: 400px;
-}
-
-.calendar {
-	background-image: url(../img/calendar.png);
-	background-repeat: no-repeat;
-	width: 570px;
-	height: 400px;
-}
-
-.tablet {
-	background-image: url(../img/tablet.png);
-	background-repeat: no-repeat;
-	width: 570px;
-	height: 400px;
 }
 
 .seo-h2 {
@@ -760,7 +711,6 @@ h1 {
 .number, .dev-item {
 	font-size: 17px;
 	font-weight: 600;
-	padding-left: 18px;
 }
 
 .development {
@@ -773,12 +723,10 @@ h1 {
 .seo-1 {
 	display: flex;
 	padding-top: 25px;
-
 }
 
 .seo-calendar {
 	display: flex;
-
 }
 
 .seo-development {
@@ -789,10 +737,9 @@ h1 {
 .text-dolore {
     font-size: 15px;
     font-weight: 300;
-    width: 70%;
-    line-height: 18px;
+    width: 68%;
+    line-height: 20px;
     letter-spacing: 0.2px;
-    padding-top: 30px;
 }
 
 .btn-bg {
@@ -880,7 +827,6 @@ h1 {
 	text-align: center;
 	width: 68%;
 	margin: 0 auto;
-
 }
 
 .your-name input, .email input {
@@ -889,7 +835,8 @@ h1 {
 	border: 1px solid #fff;
 	border-radius: 10px;
 	padding: 25px 238px 25px 24px;
-	color: #fff;   
+	color: #fff;
+	width: 50%;   
 }
 
 .your-name input:focus, .email input:focus, .massage textarea:focus {
@@ -897,7 +844,7 @@ h1 {
 }
 
 .email {
-	padding-left: 30px;
+	padding-left: 36px;
 }
 
 .massage textarea {
@@ -948,90 +895,9 @@ h1 {
 	padding-bottom: 20px;
 }
 
-
 /*MEDIA*/
 
-@media (max-width: 1250px) {
-
-    .box-form-item {
-       flex-direction: column;
-}
-	.email {
-       padding-left: 0;
-       padding-top: 20px
-}
-
-    .your-name input, .email input {
-	   width: 69%;
-}
-
-@media (max-width: 1200px) {
-    .box-works {
-        justify-content: center;
-   }
-
-   .works-item {
-   	    width: 45%;
-   	    height: 500px;
-   }
-
-   .box-our-team {
-        flex-flow: row wrap;
-        margin-top: 20px;
-   }
-
-   .box-seo {
-   	    flex-direction: column;
-   	    width: 550px;
-   }
-}
-
-@media (max-width: 1070px) {
-	.box-team {
-		display: flex;
-		flex-flow: row wrap;
-		padding: 0 30px;
-	}
-
-	.team-item {
-		margin: 60px;
-		padding: 10px 60px 40px;
-	}
-
-	.title-text {
-		padding-bottom: 30px;
-	}
-
-	.services-item {
-		width: 50%;
-	}
-
-	.services-text {
-		margin: 0 auto;
-	}
-
-	.works-item {
-		width: 80%;
-        height: 800px;
-	}
-}
-
-@media(max-width:1000px) {
-	.works-item {
-		width: 50%;
-		height: 500px;
-    }
-}
-
-@media (max-width: 902px) {
-	.box-team {
-        flex-direction: column;
-        align-items: center;
-        width: 60%;
-	}
-}
-
-@media (max-width: 862px) {
+@media (max-width: 767px) {
 	.nav {
      	display: none;
     }
@@ -1042,91 +908,124 @@ h1 {
         background-color: transparent;
     }
 
-    .box-services-item {
-    	flex-wrap: wrap;
-	}
-    
-    .services-item {
-		padding-left: 50px;
-	}
-
-	.works-item {
-		width: 50%;
-		height: 500px;
-    }
-
-    .box-message {
-    	width: 112%;
-    }
-}
-
-@media (max-width: 767px) {
-    .box-about {
+    .box-web {
 		text-align: center;
 		margin: 0 auto;
-	}
-    
-    .team-item {
-    	margin: 10px;
-        padding-bottom: 30px;
     }
 
-	.box-web {
-		text-align: center;
-		margin: 0 auto;
+    .h1 {
+      	text-align: center;
+      	font-size: 40px;
+    }
+
+    .btn-gr {
+        flex-direction: column;
+        text-align: center;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .btn-gr a {
+        margin-top: 20px;
+        display: flex;
     }
 
     .btn-primary, .btn-secondary {
         font-size: 11px;
         padding: 20px 50px;
     }
-     
-    .btn-gr {
-        flex-direction: column;
-        text-align: center;
-        max-width: 200px;
-        margin: 0 auto; 
-    }
-       
-    .btn-gr a {
-        margin-top: 20px;
-        display: flex;
-    }
 
+    .box-about {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.title-text {
+		padding-bottom: 30px;
+	}
+
+	.box-team {
+		display: flex;
+        flex-flow: row wrap;
+	}
+    
+    .team-item {
+    	width: 50%;
+        padding-bottom: 40px;
+    } 
+
+    .box-services-item {
+    	flex-wrap: wrap;
+	}
+    
     .services-item {
-    	width: 95%;
+    	width: 48%;
+        margin: 0 auto;
     }
-
+    
     .services-text {
     	margin: 0 auto;
     }
 
+    .btn-group {
+    	text-align: center;
+    }
+
     .box-works {
-    	flex-direction: column;
-    	width: 55%;
+    	display: flex;
+    	width: 145%;
+        flex-flow: row wrap;
+    }
+
+    .works-item {
+	   width: 32%;
+       height: 310px;
+       background-position: center;         
+    }
+
+    .box-price {
+       flex-flow: row wrap;
+    }
+
+    .box-price-item {
+    	width: 44%;
+    }
+
+   .box-our-team {
+    	flex-flow: row wrap;
+        margin: 0 auto;
+        padding-right: 25px;
+    }
+
+   .our-team {
+         width: 50%;
+   }
+
+    .box-seo {
+   	    flex-direction: column;
+   	    align-items: center;
+   }
+
+   .text-dolore {
+    	width: 500px;
     }
 
     .box-icon {
-    	flex-wrap: wrap;
-    	width: 300px;
-    }
-
-    .item-icon {
-    	padding-top: 50px;
+    	flex-flow: row wrap;
+        width: 80%;
     }
 
     .box-form-item {
-    	flex-wrap: wrap;
-    	width: 450px;
+    	flex-direction: column;
     }
+
+    .your-name input, .email input {
+		width: 40%;
+	}
 
     .email {
         padding-left: 0;
         padding-top: 20px;
-	}
-
-	.your-name input, .email input{
-		width: 40%
 	}
 
 	.box-message {
@@ -1139,41 +1038,9 @@ h1 {
 		width: 49%;
 	}
 
-    .box-price {
-        flex-wrap: wrap;
-        width: 60%;
-        text-align: center;
-    }
-
-    .box-our-team {
-    	flex-direction: column;
-        margin: 0 auto;
-        padding-right: 175px;
-    }
-
-    .box-seo {
-    	flex-direction: column;
-    	align-items: center;
-    }
-
-    .text-dolore {
-    	width: 500px;
-    }
-
-     h1 {
-      	text-align: center;
-      	font-size: 40px;
-    }
-
-    .btn-group {
-    	text-align: center;
-    }
-
-    .works-item {
-	   width: 130%;
-       height: 400px; 
-       background-position: center;         
-    }
+	.send {
+		width: 78%;
+	}
 }
 
 @media (max-width: 568px) {
@@ -1181,15 +1048,19 @@ h1 {
 		text-align: center;
 		width: 450px;
 	}
-    
-    .your-name input, .email input {
-    	padding-right: 180px;
-    }
 
-    .works-item {
+	.works-item {
 		width: 130%;
 		height: 350px;
 		margin-left: 0;
+    }
+
+    .item-icon {
+    	padding-top: 40px;
+    }
+    
+    .your-name input, .email input {
+    	padding-right: 180px;
     }
 
     .box-message {
@@ -1197,5 +1068,7 @@ h1 {
         padding-left: 82px;	
     }
 
-
+    .send {
+    	width: 84%;
+    }
 }
