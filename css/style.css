@@ -10,7 +10,15 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	color: #525252;
-	line-height: 13px;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
 	margin: 0;
 	padding: 0;
 }
@@ -37,8 +45,6 @@ body {
 
 .nav {
 	margin: 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	font-size: 20px;
 	font-weight: 500;
@@ -236,14 +242,13 @@ h1 {
 	width: 100%;
 	max-width: 1067px;
 	margin: 0 auto;
+	justify-content: center;
 }
 
 .team-item {
-	width: 100%; 
-}
-
-.icon {
-   padding-left: 30px;
+	width: 33.3%;
+	padding: 0 15px;
+	box-sizing: border-box;
 }
 
 .team {
@@ -251,17 +256,15 @@ h1 {
 	font-weight: 600;
 	text-align: center;
 	padding-top: 20px;
-	padding-left: 35px;
 }
 
 .text-team {
-	width: 230px;
 	text-align: center;
 	padding-top: 20px;
-	padding-left: 50px;
 	line-height: 18px;
-	letter-spacing: 0.3px;
+	letter-spacing: .3px;
 	margin: 0 auto;
+	width: 70%;
 }
 
 .page-services {
@@ -371,10 +374,14 @@ h1 {
 .btn-group {
 	text-align: center;
 	padding-top: 115px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .btn-group a {
    margin-left: 15px;
+   text-align: center;
 }
 
 .box-works{
@@ -400,7 +407,7 @@ h1 {
 	font-size: 20px;
 	color: #fff;
 	background-color: #00897b;
-	padding: 25px 60px 25px 60px;
+	padding: 25px 60px;
 	border: 1px solid #00897b;
 }
 
@@ -424,18 +431,20 @@ h1 {
 	width: 100%;
 	max-width: 1068px;
 	text-align: center;
+	justify-content: center;
 	margin: 0 auto;
 	margin-top: 130px;
 }
 
 .box-price-item {
 	background-image: url(../img/bg_price.png);
+	background-size: contain;
 	background-repeat: no-repeat;
-	width: 30%;
-	height: 600px;
+	width: 33.3%;
 	background-color: #fff;
 	padding: 47px 0;
 	margin-bottom: 100px;
+	box-sizing: border-box;
 }
 
 .price-item-1 {
@@ -482,10 +491,10 @@ h1 {
 }
 
 .box-price-item p {
-	padding-top: 35px;
+	padding-top: 20px;
 }
 
-.price-item, .price-item-1 {
+.box-price-item + .box-price-item {
 	margin-left: 30px;
 }
 
@@ -537,7 +546,7 @@ h1 {
 	width: 33.3%;
 	padding: 12px;
 	box-sizing: border-box;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 }
 
 .men-img {
@@ -572,10 +581,14 @@ h1 {
 	background-position: center;
 }
 
+.social-team li + li {
+	margin-left: 10px;
+}
+
 .social-team {
 	display: flex;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0;
     padding-top: 30px;
 }
@@ -641,7 +654,7 @@ h1 {
 	text-align: center;
 	width: 66px;
 	margin: 0 auto;
-	padding-top: 124px;
+	padding-top: 74px;
 	padding-bottom: 120px;
 }
 
@@ -701,23 +714,9 @@ h1 {
 	color: #00897b;
 }
 
-.data {
-	background-image: url(../img/date.png);
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 17px;
-}
-
 .number, .dev-item {
 	font-size: 17px;
 	font-weight: 600;
-}
-
-.development {
-	background-image: url(../img/development.png);
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 17px;
 }
 
 .seo-1 {
@@ -725,13 +724,17 @@ h1 {
 	padding-top: 25px;
 }
 
-.seo-calendar {
+.seo-box {
 	display: flex;
+	align-items: center;
 }
 
-.seo-development {
-	display: flex;
-	padding-left: 40px;
+.seo-box + .seo-box {
+	margin-left: 40px;
+}
+
+.seo-box img {
+	margin-right: 10px;
 }
 
 .text-dolore {
@@ -825,57 +828,63 @@ h1 {
 .box-form-item {
 	display: flex;
 	text-align: center;
-	width: 68%;
+	width: 100%;
+	max-width: 1030px;
 	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
 }
 
-.your-name input, .email input {
+.box-form-item + .box-form-item {
+	margin-top: 20px;
+}
+
+.form-input {
+	width: 100%;
+}
+
+.form-input input {
 	font-size: 19px;
 	letter-spacing: 1px;
 	border: 1px solid #fff;
 	border-radius: 10px;
-	padding: 25px 238px 25px 24px;
+	padding: 25px 24px;
 	color: #fff;
-	width: 50%;   
+	width: 100%;
+	box-sizing: border-box;   
 }
 
-.your-name input:focus, .email input:focus, .massage textarea:focus {
+.form-input + .form-input {
+	padding-left: 20px;
+}
+
+.form-input input:focus, .box-form-item textarea:focus {
 	outline: none;
 }
 
-.email {
-	padding-left: 36px;
-}
-
-.massage textarea {
+.box-form-item textarea {
 	font-size: 20px;
-	letter-spacing: 0.1px;
-    padding-top: 25px;
-    padding-left: 24px;
+	letter-spacing: .1px;
+	padding: 25px 24px;
 	border-radius: 10px;
 	min-height: 300px;
-    width: 66%;
+    width: 100%;
+    box-sizing: border-box;
     resize: none;
 }
 
-.box-message { 
-	padding-top: 30px;
-	text-align: center;
+.btn-send {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
 }
 
 .btn-send button {
 	font-size: 16px;
-	padding: 25px 80px 26px 80px;
+	padding: 25px 80px;
 	border-radius: 10px;
 	background-color: #fff;
 	border: 1px solid #fff;
-}
-
-.send {
-	padding-top: 37px;
-	display: flex;
-    justify-content: flex-end;
-    width: 84%;
 }
 
 .btn-send button:hover {
@@ -898,6 +907,10 @@ h1 {
 /*MEDIA*/
 
 @media (max-width: 767px) {
+	h1 {
+		font-size: 32px;
+	}
+
 	.nav {
      	display: none;
     }
@@ -911,11 +924,6 @@ h1 {
     .box-web {
 		text-align: center;
 		margin: 0 auto;
-    }
-
-    .h1 {
-      	text-align: center;
-      	font-size: 40px;
     }
 
     .btn-gr {
@@ -973,14 +981,8 @@ h1 {
 
     .box-works {
     	display: flex;
-    	width: 145%;
+    	width: 100%;
         flex-flow: row wrap;
-    }
-
-    .works-item {
-	   width: 32%;
-       height: 310px;
-       background-position: center;         
     }
 
     .box-price {
@@ -993,82 +995,90 @@ h1 {
 
    .box-our-team {
     	flex-flow: row wrap;
-        margin: 0 auto;
-        padding-right: 25px;
+        margin-top: 40px;
     }
 
    .our-team {
-         width: 50%;
+        width: 50%;
    }
 
     .box-seo {
-   	    flex-direction: column;
-   	    align-items: center;
+   	    flex-direction: column;   
    }
 
    .text-dolore {
-    	width: 500px;
+    	width: 100%;
     }
 
     .box-icon {
     	flex-flow: row wrap;
-        width: 80%;
     }
 
     .box-form-item {
     	flex-direction: column;
     }
 
-    .your-name input, .email input {
-		width: 40%;
+	.form-input + .form-input {
+		padding: 20px 0 0;
 	}
 
-    .email {
-        padding-left: 0;
-        padding-top: 20px;
+	.seo-quis {
+		width: 100%;
 	}
 
-	.box-message {
-        width: 112%;
-        text-align: start;
-        padding-left: 150px;
-     }
-
-	.massage textarea {
-		width: 49%;
-	}
-
-	.send {
-		width: 78%;
+	.seo-quis img {
+		width: 100%;
 	}
 }
 
 @media (max-width: 568px) {
+    .box-team {
+    	flex-wrap: wrap;
+    	padding-top: 50px;
+    }
+
+    .team-item {
+    	width: 100%;
+    }
+
+    .services-item {
+    	width: 80%;
+    }
+
 	.title-text {
 		text-align: center;
-		width: 450px;
+		width: 100%;
 	}
 
-	.works-item {
-		width: 130%;
-		height: 350px;
-		margin-left: 0;
+	.btn-group {
+		flex-flow: wrap;
+        margin: 0 auto;
+        display: flex;
+        width: 70%;
+        justify-content: flex-start;
+	}
+
+	.btn-all, .btn-web {
+		margin-bottom: 20px;
+	}
+
+    .box-price-item {
+    	width: 100%;
+    }
+
+    .box-our-team {
+    	flex-direction: column;
+    }
+
+    .our-team {
+    	width: 100%;
     }
 
     .item-icon {
     	padding-top: 40px;
     }
     
-    .your-name input, .email input {
+    .form-input input {
     	padding-right: 180px;
-    }
-
-    .box-message {
-    	width: 133%;
-        padding-left: 82px;	
-    }
-
-    .send {
-    	width: 84%;
     }
 }
