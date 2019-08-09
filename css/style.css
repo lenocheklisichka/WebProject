@@ -683,7 +683,7 @@ h1 {
 }
 
 .seo-quis {
-	width: 60%;
+	width: 80%;
 }
 
 .box-seo-item-1 {
@@ -701,6 +701,10 @@ h1 {
 
 .box-seo-item-2 {
 	flex-direction: row-reverse;
+}
+
+.box-seo img {
+	width: 100%;
 }
 
 .seo-h2 {
@@ -1006,6 +1010,10 @@ h1 {
    	    flex-direction: column;   
    }
 
+   .seo-item-2 {
+   	    padding-left: 30px;
+   }
+
    .text-dolore {
     	width: 100%;
     }
@@ -1029,6 +1037,11 @@ h1 {
 	.seo-quis img {
 		width: 100%;
 	}
+
+@media (max-width: 682px) {
+     .btn-mockups {
+    	margin-top: 20px;
+    }
 }
 
 @media (max-width: 568px) {
@@ -1062,9 +1075,17 @@ h1 {
 		margin-bottom: 20px;
 	}
 
+	.btn-mockups {
+    	margin-top: 20px;
+    }
+
     .box-price-item {
     	width: 100%;
     }
+
+    .box-price-item + .box-price-item {
+        margin-left: 0;
+	 }
 
     .box-our-team {
     	flex-direction: column;
